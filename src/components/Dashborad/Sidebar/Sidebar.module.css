@@ -1,0 +1,20 @@
+.Sidebar{
+    background-color: var(--main-color);
+    color: var(--whit-color);
+    width: 300px;
+}
+
+.icon, .linkTittle{
+    font-size: 1.2rem;
+}
+
+.navItem{
+    cursor: pointer;
+    transition: background 1s;
+    color: white;
+    text-decoration: none;
+}
+
+.navItem:hover{
+    background: rgb(255, 255, 255, .1);
+}
