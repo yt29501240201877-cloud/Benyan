@@ -1,5 +1,16 @@
+// import FormDashboard from '../../components/Ui/FormDashboard/FormDashboard'
+import { Outlet } from "react-router-dom"
+
 function Users(){
-    return <h1>Users Page</h1>
+
+    const headers = ["First Name", "Last Name", "Email"] 
+    const line = ["Users"]
+
+    return (
+        <section className='py-4'>
+            <Outlet context={{headers, line}}/>
+        </section>
+    )
 }
 
 export default Users

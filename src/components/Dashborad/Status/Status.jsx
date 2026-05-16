@@ -1,5 +1,3 @@
-// import React from 'react'
-
 import Card from '../../Ui/StatusCard/StatusCard'
 
 export default function Status() {

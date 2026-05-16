@@ -6,7 +6,7 @@ function Sidebar() {
         {icon: "fa-chart-line", title: "Status", path: "/"},
         {icon: "fa-users", title: "User Management", path: "/Users"},
         {icon: "fa-building", title: "Projects Management", path: "/Projects"},
-        {icon: "fa-building", title: "Dvelopers Management"},
+        {icon: "fa-code", title: "Dvelopers Management", path: "/Developers"},
         {icon: "fa-globe", title: "CMS"},
         {icon: "fa-message", title: "Live Chat"},
 ]
