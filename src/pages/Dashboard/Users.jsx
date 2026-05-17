@@ -5,10 +5,11 @@ function Users(){
 
     const headers = ["First Name", "Last Name", "Email"] 
     const line = ["Users"]
+    const button = ["Add New User"]
 
     return (
         <section className='py-4'>
-            <Outlet context={{headers, line}}/>
+            <Outlet context={{headers, line, button}}/>
         </section>
     )
 }

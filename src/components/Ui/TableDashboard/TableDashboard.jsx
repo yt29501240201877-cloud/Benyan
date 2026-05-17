@@ -1,12 +1,12 @@
 import {Link, useOutletContext} from 'react-router-dom'
 
 export default function TableDashboard() {
-     const {headers, line} = useOutletContext();
+     const {headers, line, button} = useOutletContext();
   return (
     <div className="container">
         <div className="d-flex justify-content-between mb-3">
             <h3>{line}</h3>
-            <Link to="add" className="btn btn-primary">Add New User</Link>
+            <Link to="add" className="btn btn-primary">{button}</Link>
         </div>
         <table className="table">
             <thead>
