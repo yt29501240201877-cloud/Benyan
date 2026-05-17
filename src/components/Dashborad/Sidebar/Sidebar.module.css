@@ -18,3 +18,15 @@
 .navItem:hover{
     background: rgb(255, 255, 255, .1);
 }
+
+.draftBadge{
+    margin-inline-start: auto;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background-color: #fff3cd;
+    color: #8a5a00;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
