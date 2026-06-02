@@ -1,16 +1,19 @@
 require("dotenv").config();
 
+
 const express = require("express");
 const app = express();
+const morgan = require("morgan");
 
 app.use(express.json());
 
 // Single logger
 if (process.env.NODE_ENV === "dev") {
-    app.use((req, res, next) =>{
-        console.log(`${req.method} ${req.originalUrl}`);
-        next();
-    })
+    app.use(morgan("dev"));
+    }
+
+if (process.env.NODE_ENV === "dev") {
+    app.use(morgan("combined"))
 }
 
 app.get('/test',(req,res)=>{
@@ -19,6 +22,10 @@ app.get('/test',(req,res)=>{
 
 const connect = require("./Config/db")
 connect();
+
+const adminRoutes = require("./Routes/adminRoute");
+
+app.use("api/dashboard", adminRoutes)
 
 const port = process.env.PORT || 3000;
     
